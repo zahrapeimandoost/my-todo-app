@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-todo-app</title>
+    <link rel="stylesheet" href="style/dark.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="profile">
+        <img
+          src="./assets/images/profile.png"
+          alt="تصویر پروفایل"
+          class="avatar"
+        />
+        <div class="info">
+          <h2>سلام، رویا</h2>
+          <p>سه‌شنبه، ۵ بهمن ۱۴۰۲</p>
+        </div>
+      </div>
+      <ul>
+        <li id="home">
+          <a href="#"
+            ><img src="./assets/images/home-2.svg" alt="خانه" /> خانه</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/taskdark.svg" alt="تسک ها" /> تسک ها</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/darkcalendar.svg" alt="تقویم" /> تقویم</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/darkdata.png" alt="گزارشات" /> گزارشات</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/darksetting.svg" alt="تنظیمات" />
+            تنظیمات</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/dark24-support.svg" alt="پشتیبانی" />
+            پشتیبانی</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/darkprofile.svg" alt="پروفایل" />
+            پروفایل</a
+          >
+        </li>
+      </ul>
+      <div class="toggle-button">
+        <div class="light">
+          <a href="index.html"
+            ><img src="./assets/images/sun.svg" alt="sun" />روشن</a
+          >
+        </div>
+        <div class="dark">
+          <a href="dark.html"
+            ><img src="./assets/images/darkmoon.svg" alt="moon" />تاریک</a
+          >
+        </div>
+      </div>
+      <hr />
+      <a class="exit" href="#"
+        ><img src="./assets/images/darklogout.svg" alt="خروج" /> خروج</a
+      >
+    </aside>
+    <main class="content">
+      <div class="res-header">
+        <img src="assets/images/darkmenu.svg" alt="hamburger" class="hamb" />
+        <div class="logo-container">
+          <a class="rh-btn" href="#" id="main-logo">کوئرا لیست</a>
+        </div>
+      </div>
+      <div class="res-sidebar">
+        <div class="res-top">
+          <h4>کوئرا لیست</h4>
+          <img src="assets/images/darkcross.svg" alt="cross" />
+        </div>
+        <ul>
+          <li id="home">
+            <a href="#"
+              ><img src="./assets/images/home-2.svg" alt="خانه" /> خانه</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/taskdark.svg" alt="تسک ها" /> تسک ها</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/darkcalendar.svg" alt="تقویم" />
+              تقویم</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/darkdata.png" alt="گزارشات" />
+              گزارشات</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/darksetting.svg" alt="تنظیمات" />
+              تنظیمات</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/dark24-support.svg" alt="پشتیبانی" />
+              پشتیبانی</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/darkprofile.svg" alt="پروفایل" />
+              پروفایل</a
+            >
+          </li>
+        </ul>
+        <div class="toggle-button">
+          <div class="light">
+            <a href="index.html"
+              ><img src="./assets/images/sun.svg" alt="sun" />روشن</a
+            >
+          </div>
+          <div class="dark">
+            <a href="dark.html"
+              ><img src="./assets/images/darkmoon.svg" alt="moon" />تاریک</a
+            >
+          </div>
+        </div>
+        <hr />
+        <a class="exit" href="#"
+          ><img src="./assets/images/darklogout.svg" alt="خروج" /> خروج</a
+        >
+      </div>
+      <div class="res-profile">
+        <img
+          src="./assets/images/profile.png"
+          alt="تصویر پروفایل"
+          class="avatar"
+        />
+        <div class="info">
+          <h2>سلام، رویا</h2>
+          <p>سه‌شنبه، ۵ بهمن ۱۴۰۲</p>
+        </div>
+      </div>
+      <section class="tasks-today">
+        <div>
+          <h2>تسک‌های امروز</h2>
+          <p id="today-count">0 تسک را باید انجام دهید.</p>
+        </div>
+        <button id="add-task" class="button">+ افزودن وظیفه جدید</button>
+        <div class="empty-task">
+          <img src="./assets/images/Empty task.png" alt="empty-task" />
+          <p class="caption">چه کارهایی امروز برای انجام داری؟</p>
+          <p class="sub-caption">
+            میتونی الان تسک‌هاتو اینجا بنویسی و برنامه ریزی رو شروع کنی!
+          </p>
+        </div>
+      </section>
+
+      <section class="tasks-done" style="display: none">
+        <h2>تسک‌های انجام شده</h2>
+        <p id="done-count">0 تسک انجام شده است.</p>
+        <div class="dones-dark">
+          <ul id="done-task-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/dark.js"></script>
+  </body>
+</html>
